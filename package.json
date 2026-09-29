@@ -1,0 +1,28 @@
+{
+  "name": "claudecodetesting",
+  "version": "1.0.0",
+  "description": "Requirements and offer toolkit operated by Claude Code (no LLM API calls)",
+  "type": "module",
+  "scripts": {
+    "extract": "tsx src/index.ts extract",
+    "requirements:build": "tsx src/index.ts requirements:build",
+    "requirements:validate": "tsx src/index.ts requirements:validate",
+    "screenshots": "tsx src/index.ts screenshots",
+    "coverage:validate": "tsx src/index.ts coverage:validate",
+    "typecheck": "tsc --noEmit",
+    "build": "tsc"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "mammoth": "^1.13.0",
+    "pdf-parse": "^2.4.5",
+    "tsx": "^4.23.15",
+    "typescript": "^7.0.2",
+    "zod": "^4.6.5"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.3"
+  }
+}

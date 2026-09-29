@@ -1,0 +1,43 @@
+{
+  "manifestVersion": 1,
+  "root": "data/screenshots",
+  "generatedAt": "2026-09-29T12:43:59.195Z",
+  "screenshots": [
+    {
+      "id": "SCR-75706369",
+      "path": "data/screenshots/desktop/design patterns.png",
+      "platform": "desktop",
+      "bytes": 863987,
+      "sha256": "7570636997fbbfbe98923bbe6fa4600209ea0ae37e5432dcba9e5a52f556ce27",
+      "width": 1448,
+      "height": 1087
+    },
+    {
+      "id": "SCR-BA1B5781",
+      "path": "data/screenshots/desktop/shop main page - front -page.png",
+      "platform": "desktop",
+      "bytes": 1612747,
+      "sha256": "ba1b57814719aa95498e67c94934182fe4e738e3af00828060d2c94b04379855",
+      "width": 1448,
+      "height": 1087
+    },
+    {
+      "id": "SCR-07BBC5DC",
+      "path": "data/screenshots/desktop/woocommerce category page.png",
+      "platform": "desktop",
+      "bytes": 1354044,
+      "sha256": "07bbc5dcec37301ae684a326c2058a1648a5ba0cfc77be15a66f9faa9d333251",
+      "width": 1448,
+      "height": 1087
+    },
+    {
+      "id": "SCR-551AB1CB",
+      "path": "data/screenshots/desktop/woocommerce product page.png",
+      "platform": "desktop",
+      "bytes": 1244827,
+      "sha256": "551ab1cb9a2f5106c571f74eed773858fbbf11524e94d082be10df253afe1b4c",
+      "width": 1448,
+      "height": 1087
+    }
+  ]
+}

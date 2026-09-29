@@ -1,0 +1,213 @@
+# fitme.pdf (pdf, sha256 c574ab96175602f9cb62fa90f6690bceb06d27920d534128c6bf2dbddc968a56)
+
+===== segmentIndex 0 | page 1 =====
+FIT.ME
+Zakres prac do wyceny
+Modernizacja sklepu internetowego fitmeshop.pl
+PLATFORMA 	WordPress + WooCommerce
+ZAKRES 	UX/UI, projekt graficzny, wdrożenie, responsywność, optymalizacja
+CEL Sklep premium wellness / joga / Pilates / trening domowy, który prowadzi
+klienta od potrzeby do zakupu
+Dokument przygotowany jako brief dla firm projektujących i wdrażających sklepy internetowe. Prosimy o wycenę
+prac w rozbiciu na projekt UX/UI, wdrożenie desktop, wdrożenie mobile oraz elementy opcjonalne.
+
+===== segmentIndex 1 | page 2 =====
+1. Cel projektu
+━━━━━━━━━━
+Celem jest przebudowa fitmeshop.pl z katalogowego sklepu ze sprzętem fitness w spójną, premium markę
+codziennego ruchu i regeneracji. Sklep ma być estetyczny, prosty, emocjonalny i sprzedażowy, ale bez
+agresywnego charakteru typowego dla sklepów fitness.
+ Pozycjonowanie wizualne: premium wellness / joga / Pilates / domowy ruch i regeneracja.
+ Główna grupa odbiorców: przede wszystkim kobiety zainteresowane Pilatesem, jogą, wellness, estetyką i ruchem
+w domu.
+ Główna zasada UX: użytkownik ma szybko przejść od potrzeby → właściwej kategorii/produktu → dowodu jakości
+→ zakupu → dobrania akcesoriów.
+ Wizerunek: minimalistyczny, elegancki, spokojny; dużo światła i przestrzeni; stonowane beże, ciepła biel, brąz,
+matcha/oliwka jako akcenty; spójność z nowym, prostym systemem opakowań Fit.me.
+WAŻNE ZAŁOŻENIE
+Nie planujemy zmiany platformy w ramach podstawowej wyceny. Sklep pozostaje na WordPress +
+WooCommerce. Ewentualna rekomendacja replatformingu powinna być przedstawiona i wyceniona osobno.
+2. Założenia wspólne dla całego sklepu
+━━━━━━━━━━
+ Projekt powinien być przygotowany w Figma (desktop + mobile) przed wdrożeniem i zaakceptowany przez
+zamawiającego.
+ Nowy system wizualny powinien być konsekwentny na stronie głównej, kategoriach, kartach produktów, koszyku i
+checkout.
+ Projekt ma być modułowy: możliwość samodzielnej podmiany zdjęć, tekstów, banerów, kolejności sekcji i
+produktów z poziomu WordPressa.
+ Należy zachować poprawność istniejących integracji WooCommerce, płatności, dostaw, analityki i integracji
+magazynowo-zamówieniowych. Każdy element wymagający zmiany integracji należy zgłosić przed wdrożeniem.
+ Nie chcemy nadmiernego dokładania ciężkich wtyczek. Preferowane rozwiązania lekkie, natywne lub dobrze
+utrzymywane.
+ Należy zachować SEO: adresy URL, indeksację, meta dane i istniejące przekierowania; zmiany URL tylko po
+uzgodnieniu.
+ Wszystkie sekcje sprzedażowe powinny być edytowalne oraz możliwe do wykorzystania ponownie na landing
+page’ach.
+CZĘŚĆ A — WERSJA DESKTOPOWA
+━━━━━━━━━━
+PROŚBA DO WYCENY
+Prosimy potraktować poniższy zakres jako podstawę wyceny desktop. Jeżeli któryś punkt wymaga płatnej
+wtyczki/licencji lub niestandardowego programowania, prosimy wskazać to osobno.
+3. Nawigacja, header i elementy globalne
+ Uproszczenie głównego menu. Proponowane poziomy główne: JOGA & PILATES / TRENING / REGENERACJA /
+ZESTAWY / BESTSELLERY / NOWOŚCI.
+ Materiały i typy produktów (np. PU, TPE, kauczuk, korek) mają działać jako podkategorie/filtry, a nie dominować
+w głównym menu.
+ Nowoczesne mega menu z dużą czytelnością i opcjonalnymi zdjęciami/kaflami kategorii.
+
+===== segmentIndex 2 | page 3 =====
+ Stały górny pasek benefitów: darmowa dostawa od określonego progu / szybka wysyłka / 30 dni na zwrot. Teksty
+edytowalne z CMS.
+ Czytelne ikony: wyszukiwarka, konto, ulubione (opcjonalnie), koszyk z licznikiem.
+ Sticky header po przewinięciu - uproszczony, bez zabierania dużej części ekranu.
+4. Strona główna — nowy układ sekcji
+Układ funkcjonalny pozostaje zgodny z przygotowanym wcześniej konceptem Fit.me 2.0. Oczekujemy zaprojektowania
+i wdrożenia następującej kolejności:
+Sekcja 	Zakres / funkcja
+Hero / pierwsze wrażenie 	Duże lifestyle’owe zdjęcie lub video. Claim marki np. „Ruch, który pasuje do Cieb
++ krótki opis + 1 główne CTA. Zdjęcie ma sprzedawać świat marki, nie tylko prod
+Czego dziś potrzebujesz? 	4 duże kafle prowadzące po potrzebie: Joga & Pilates / Trening w domu /
+Regeneracja / Gotowe zestawy.
+Bestsellery Fit.me 	4-8 produktów. Karty z oceną, krótką korzyścią i możliwością szybkiego dodania
+koszyka.
+Stwórz swoje domowe studio 	Sekcja gotowych zestawów/bundli, np. Yoga Starter, Pilates at Home, Recovery S
+Możliwość zmiany zestawów w CMS.
+Dlaczego Fit.me? 	4 wyróżniki marki w formie lekkich ikon/kafli: design, funkcjonalność/materiały
+szybka wysyłka, 30 dni na zwrot.
+Fit.me w Waszych domach 	UGC / zdjęcia klientów + prawdziwe opinie. Siatka lub karuzela; możliwość
+linkowania do produktów.
+Zacznij od siebie 	Treści edukacyjne i zakupowe: poradniki doboru maty, Pilates w domu, mobilno
+regeneracja.
+Newsletter / Fit.me Club 	Krótka, premium sekcja zapisu zamiast klasycznego agresywnego popupu. Bene
+za zapis edytowalny.
+Krótka historia marki 	Zwięzłe 2-4 zdania o Fit.me. Długi tekst SEO przenieść niżej lub na osobną stronę
+„Poznaj nas”.
+5. Strony kategorii
+ Hero kategorii: nazwa + bardzo krótki opis + zdjęcie/lifestyle. Bez dużych bloków tekstu SEO na górze.
+ Kafle skrótów zależne od kategorii, np. Dla początkujących / Najpopularniejsze / Maty / Kostki i paski / Zestawy /
+Regeneracja.
+ Nowy system filtrów dostosowany do kategorii: kolor, materiał, grubość, zastosowanie, cena, dostępność, poziom
+zaawansowania itp. Zakres filtrów do ustalenia na bazie atrybutów WooCommerce.
+ Sortowanie: popularność, cena, nowości, najlepiej oceniane.
+ Karty produktów z większym zdjęciem, nazwą, ceną, oceną, 1 krótką korzyścią, wariantami kolorów, badge’ami i
+szybkim „Dodaj do koszyka”.
+ Badge’e sterowane administracyjnie: BESTSELLER / NOWOŚĆ / TOP OCENY / DLA POCZĄTKUJĄCYCH / OSTATNIE
+SZTUKI (tylko gdy zgodne ze stanem).
+ Sekcja pomocnicza w połowie listingu: „Nie wiesz, którą matę wybrać?” + link do poradnika/quizu
+porównawczego.
+ Długi tekst SEO na dole kategorii - czytelnie sformatowany i zwijany, jeśli jest obszerny.
+6. Karta produktu — kluczowy zakres
+ Nowa galeria zdjęć: duże zdjęcia, miniatury, zoom/lightbox, pełna obsługa video, zdjęć lifestyle i infografik.
+
+===== segmentIndex 3 | page 4 =====
+ Prawa kolumna „above the fold”: nazwa, ocena/opinie, krótka obietnica produktu, cena, warianty kolorystyczne,
+dostępność, CTA.
+ Zamiast surowego „68 in stock”: komunikaty przyjazne użytkownikowi, np. „Dostępna - wysyłka dzisiaj”; liczba
+sztuk tylko przy niskim stanie.
+ Warianty kolorów jako czytelne swatche/miniatury, nie jako techniczny select.
+ 3-4 bardzo krótkie zalety konkretnego produktu przed przyciskiem zakupu.
+ Duży, jednoznaczny przycisk „Dodaj do koszyka”.
+ Tuż pod CTA: „Dobierz do swojej maty / Skompletuj zestaw” - 2-4 produkty uzupełniające z szybkim dodaniem i
+opcjonalnym rabatem zestawowym.
+ Trust row w strefie decyzji: szybka wysyłka / darmowa dostawa od progu / 30 dni na zwrot / bezpieczne
+płatności.
+ Opinie i ocena przeniesione bliżej decyzji zakupowej; niżej pełna sekcja opinii z możliwością dodania zdjęć.
+ Długi opis uporządkowany w sekcje/accordion: Opis / Najważniejsze zalety / Parametry / Materiał / Pielęgnacja /
+Dostawa i zwroty / Opinie.
+ Sekcja „Czy to dla Ciebie?” albo krótki poradnik doboru na produktach, gdzie decyzja jest trudniejsza (np. maty).
+ Sekcja produktów powiązanych kolorystycznie lub funkcjonalnie - spójne domowe studio, nie przypadkowe
+„polecane”.
+7. Koszyk
+ Uproszczony wygląd koszyka i ograniczenie rozpraszaczy.
+ Pasek postępu do darmowej dostawy: „Brakuje Ci X zł do darmowej dostawy” - wartość dynamiczna.
+ Cross-sell 2-3 małych produktów dopasowanych do zawartości koszyka z „Dodaj +”.
+ Wyraźne podsumowanie: produkty, rabat, dostawa, suma.
+ Widoczny główny CTA do checkoutu oraz trust icons.
+ Możliwość zastosowania kuponu bez dominowania nad głównym CTA.
+8. Checkout / finalizacja zamówienia
+ Jednokolumnowy, prosty checkout bez rozbudowanego menu sklepu i bez sekcji odciągających uwagę.
+ Zakup bez zakładania konta jako standard; opcjonalne utworzenie konta po zamówieniu.
+ Minimalna liczba pól i poprawne autouzupełnianie danych.
+ Czytelny wybór dostawy i płatności; zachowanie istniejących integracji.
+ Stałe podsumowanie kosztów i duży finalny CTA.
+ Komunikaty błędów bez przeładowania strony, jasno wskazujące pole wymagające poprawy.
+9. Wyszukiwarka, opinie, treści i elementy wspierające sprzedaż
+ Wyszukiwarka z podpowiedziami produktów, kategorii i popularnych fraz (jeśli możliwe bez ciężkiego
+rozwiązania).
+ Sekcja/komponent UGC możliwy do użycia na homepage i kartach produktów.
+ Nowy styl opinii: imię/oznaczenie klienta, ocena, treść, opcjonalne zdjęcie, oznaczenie „zweryfikowany zakup” jeśli
+system to wspiera.
+ Blog/poradniki zaprojektowane jako część ścieżki zakupowej, z linkami do produktów i kategorii.
+ Landing page’e kampanii, kolekcji kolorystycznych i zestawów tworzone z tych samych modułów.
+CZĘŚĆ B — WERSJA MOBILNA
+━━━━━━━━━━
+OSOBNA POZYCJA WYCENY
+Prosimy o osobną wycenę dopracowania mobilnego UX/UI i wdrożenia. Mobile nie ma być jedynie pomniejszoną
+wersją desktopu - wymaga własnych zachowań, kolejności i elementów sticky.
+
+===== segmentIndex 4 | page 5 =====
+10. Mobile — header i nawigacja
+ Kompaktowy header: logo + wyszukiwarka + koszyk; konto/menu dostępne jednym tapnięciem.
+ Menu hamburger z czytelnymi głównymi potrzebami/kategoriami; bez zagnieżdżania wielu technicznych
+poziomów.
+ Benefit bar skrócony do jednej komunikacji na raz lub przewijanej karuzeli; wysokość minimalna.
+ Sticky header może się chować przy scrollu w dół i wracać przy scrollu w górę.
+11. Mobile — strona główna
+ Hero bez nadmiernej wysokości; tekst i CTA muszą być czytelne na pierwszym ekranie.
+ Kafle „Czego potrzebujesz?” jako przewijany poziomo zestaw lub 2 × 2 - zależnie od testów czytelności.
+ Bestsellery w układzie 2 produkty w wierszu lub karuzeli, bez zbyt małych nazw/cen.
+ Zestawy/bundle jako duże karty z jednym CTA; nie ściskać kilku komunikatów w jednym ekranie.
+ UGC jako swipeable carousel/reels-like grid; zdjęcia/video mają być lekkie i ładowane lazy-load.
+ Zachować pełną kolejność modułów desktop, ale dopuszcza się zmianę układu w obrębie modułu, aby skrócić
+scroll i zwiększyć czytelność.
+12. Mobile — kategorie i listing
+ 2 produkty w wierszu, z dużym zdjęciem i czytelną ceną.
+ Sticky belka „Filtry / Sortuj” nad listingiem lub przy dolnej krawędzi - łatwo dostępna kciukiem.
+ Filtry otwierane w bottom sheet / panelu pełnoekranowym; wyraźne „Pokaż wyniki” i „Wyczyść”.
+ Szybkie dodanie do koszyka bez przypadkowych kliknięć i bez zasłaniania karty produktu.
+ Warianty kolorów ograniczone do czytelnego podglądu; „+ więcej” przy wielu wariantach.
+13. Mobile — karta produktu
+ Galeria swipe z czytelnym licznikiem zdjęć i możliwością powiększenia.
+ Najważniejsze informacje nad foldem: tytuł, ocena, cena, wariant, dostępność, 3-4 zalety.
+ Sticky „Dodaj do koszyka” na dole ekranu z ceną i CTA. Pasek nie może zasłaniać treści ani systemowych
+elementów telefonu.
+ Warianty jako duże tappable swatche, minimum ok. 44 px obszaru dotyku.
+ Cross-sell „Dobierz do produktu” jako pozioma karuzela z szybkim dodaniem.
+ Opis/parametry jako akordeony, domyślnie zamknięte poza najważniejszą sekcją.
+ Opinie i zdjęcia klientów w wygodnym formacie mobilnym; filtr oceny opcjonalny.
+14. Mobile — koszyk i checkout
+ Koszyk w układzie jednokolumnowym; produkty łatwe do edycji bez przeładowania strony.
+ Pasek darmowej dostawy wysoko, zanim użytkownik przejdzie do podsumowania.
+ Cross-sell w poziomej karuzeli, maksymalnie 2-3 rekomendacje na ekranie.
+ Sticky CTA „Przejdź do kasy” w koszyku.
+ Checkout w jednym pionowym przepływie; duże pola, poprawna klawiatura dla telefonu/kodu pocztowego/e-
+maila.
+ Metody dostawy/płatności jako łatwe do kliknięcia karty/radio rows. Brak małych checkboxów i linków obok
+siebie.
+ Finalne podsumowanie zamówienia dostępne bez przewijania wstecz.
+15. Mobile — wydajność i standardy
+ Projekt mobile-first pod kątem Core Web Vitals i realnych urządzeń, nie tylko podglądu w przeglądarce.
+ Optymalizacja obrazów: WebP/AVIF, srcset, lazy loading, właściwe rozmiary miniatur WooCommerce.
+ Minimalizacja CLS - stałe miejsce dla zdjęć, banerów, opinii i elementów ładowanych dynamicznie.
+ Obszary dotykowe min. ok. 44 × 44 px, widoczny focus, poprawne kontrasty i semantyczne nagłówki.
+ Testy co najmniej: iPhone Safari, Chrome Android, popularne rozdzielczości 360-430 px.
+
+===== segmentIndex 5 | page 6 =====
+Przykłady jak to powinno wyglądać:. Tylko tsam układ jest w porządku- z małymi zmianami, ale już kolor do zmiany na
+Coś w typie
+Minimal elegance
+Pure white
+Nature stone
+artistic
+
+===== segmentIndex 6 | page 7 =====
+
+
+===== segmentIndex 7 | page 8 =====
+
+
+===== segmentIndex 8 | page 9 =====
+
+
+===== segmentIndex 9 | page 10 =====
+
