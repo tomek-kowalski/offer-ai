@@ -227,14 +227,18 @@ left unverified.
   requirements against 01, and base all design work (desktop tweaks and mobile)
   on it.
 - The supplied screenshots are the **desktop** design (they match inquiry
-  pages 7–10). **No mobile screenshots are supplied.** The mobile version is
-  designed later from the desktop screenshots, the inquiry's mobile requirements
-  and the desktop visual language.
-- Mobile-only requirements (`platforms: ["mobile"]`) are therefore
-  `not_verifiable` (mobile design still to be done), never `missing` just because
-  no mobile screenshot exists, and never `covered`/`partial` from desktop
-  screenshots. Desktop screenshots may be cited in `notes` as design context.
-  `coverage:validate` enforces this while there are no mobile screenshots.
+  pages 7–10). **No mobile screenshots are supplied, intentionally:** the client
+  provided desktop designs only. The mobile version must be conceptualised from
+  the desktop designs, the inquiry's mobile requirements and the desktop visual
+  language.
+- Visually assessable mobile-only requirements (`platforms: ["mobile"]`,
+  `visualVerification` `possible` or `partial`) are therefore
+  `design_not_provided`: never `missing` or `not_verifiable` just because no
+  mobile screenshot exists, and never `covered`/`partial` from desktop
+  screenshots. Mobile requirements with `visualVerification: "impossible"`
+  (behaviour, performance, process, …) stay `not_verifiable`. Desktop
+  screenshots may be cited in `notes` as design context. `coverage:validate`
+  enforces this while there are no mobile screenshots.
 - Mobile functional requirements (sticky add-to-cart, bottom-sheet filters,
   responsive navigation, touch targets, scroll behaviour, …) stay separate
   requirements. Do not invent mobile functionality the inquiry does not state.
@@ -267,7 +271,9 @@ Rules, enforced by `coverage:validate`:
 - Exactly one assessment for **every** requirement, with no unknown IDs.
 - `covered`: fully shown. `partial`: shown but incomplete or different.
   `missing`: visually checkable but not in any screenshot. `not_verifiable`: cannot
-  be judged from images.
+  be judged from static designs (behaviour, integrations, backend, SEO,
+  performance, process). `design_not_provided`: visually assessable, but the
+  client supplied no design at all for the requirement's platform (fitme: mobile).
 - `covered` and `partial` need ≥ 1 `evidence` entry with a concrete `note` (which
   element/region).
 - `partial` and `missing` need `gaps`.
@@ -275,8 +281,12 @@ Rules, enforced by `coverage:validate`:
   For `possible`, prefer `missing` over `not_verifiable`.
 - Evidence should match the requirement's platform (a mobile requirement is not
   `covered` by desktop screenshots alone; the validator warns). If there are
-  **no** screenshots for that platform at all, the validator errors on
-  `covered`/`partial`/`missing` and expects `not_verifiable`.
+  **no** screenshots for that platform at all, the status must be
+  `design_not_provided` (or `not_verifiable` when `visualVerification` is
+  `"impossible"`); anything else is an error.
+- `design_not_provided` is only valid when the requirement's platform has no
+  screenshots, and takes no `evidence` (other platforms' screenshots go in
+  `notes`); `gaps` is not required.
 - `confidence`: `low` when the screenshot is ambiguous, cropped or low-resolution.
 
 Run `npm run coverage:validate` until it prints `OK`. It also fails if a
@@ -300,8 +310,9 @@ Build it only from validated artifacts:
   IDs (`REQ-…`). Put `priority: "optional"` items in their own section.
 - Use coverage status to describe work: `covered` means the design exists
   (implementation only), `partial` or `missing` means design work is still needed,
-  and `not_verifiable` is backend/process work, except mobile-only items with no
-  mobile screenshots, which are mobile design + implementation work.
+  `design_not_provided` means design + implementation work (fitme: mobile design
+  conceptualised from desktop direction 01), and `not_verifiable` is
+  backend/behaviour/process work.
 - Mobile UX/UI design (from the desktop design, direction 01) is its own scope
   item.
 - Assumptions and open questions: every `conditions` value, every unverified

@@ -56,15 +56,22 @@ export function validateCoverage(
             error(`${a.requirementId}: visualVerification is "impossible", so status must be "not_verifiable"`);
         }
         const wanted = req.platforms.filter((p) => p !== "all");
-        // With no screenshots for the requirement's platform, its design is still to be done:
-        // "not_verifiable" is the expected status, not "missing".
+        // No screenshots for the requirement's platform means the client supplied no design
+        // for it: visually assessable requirements are "design_not_provided", and only
+        // inherently non-visual ones ("impossible") stay "not_verifiable".
         const noShotsForPlatform =
             wanted.length > 0 && !manifest.screenshots.some((s) => s.platform === "unknown" || (wanted as string[]).includes(s.platform));
+        if (a.status === "design_not_provided" && !noShotsForPlatform) {
+            error(`${a.requirementId}: "design_not_provided" is only for requirements whose platform has no screenshots at all`);
+        }
+        if (a.status === "design_not_provided" && a.evidence.length > 0) {
+            error(`${a.requirementId}: "design_not_provided" takes no evidence; cite other platforms' screenshots in "notes" as context`);
+        }
+        if (noShotsForPlatform && req.visualVerification !== "impossible" && a.status !== "design_not_provided") {
+            error(`${a.requirementId}: no ${wanted.join("/")} design was supplied; use "design_not_provided", not "${a.status}"`);
+        }
         if (req.visualVerification === "possible" && a.status === "not_verifiable" && !noShotsForPlatform) {
             warn(`${a.requirementId}: marked not_verifiable although visualVerification is "possible"; prefer "missing"`);
-        }
-        if (noShotsForPlatform && a.status === "missing") {
-            error(`${a.requirementId}: no ${wanted.join("/")} screenshots exist; use "not_verifiable" (design still to be done), not "missing"`);
         }
 
         const platforms = new Set<string>();
@@ -72,9 +79,6 @@ export function validateCoverage(
             const shot = screenshotsById.get(e.screenshotId);
             if (!shot) error(`${a.requirementId}: evidence references unknown screenshot ${e.screenshotId}`);
             else platforms.add(shot.platform);
-        }
-        if (noShotsForPlatform && (a.status === "covered" || a.status === "partial")) {
-            error(`${a.requirementId}: requirement is for ${wanted.join("/")} but no such screenshots exist; other platforms' screenshots are context, not evidence`);
         }
         if (a.status === "covered" && wanted.length > 0 && platforms.size > 0 && !platforms.has("unknown")) {
             if (!wanted.some((p) => platforms.has(p))) {

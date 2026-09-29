@@ -13,7 +13,13 @@ export const CoverageStatusSchema = z.enum([
     /** Could be verified visually, but no screenshot shows it. */
     "missing",
     /** Cannot be judged from screenshots (backend, SEO, integration, process). */
-    "not_verifiable"
+    "not_verifiable",
+    /**
+     * Visually assessable, but the client supplied no design for the requirement's
+     * platform (e.g. mobile): the design is to be conceptualised from the other
+     * platform's designs and the inquiry.
+     */
+    "design_not_provided"
 ]);
 
 export const ConfidenceSchema = z.enum(["high", "medium", "low"]);
