@@ -128,9 +128,18 @@ order. Every field is required; use `null` where allowed instead of omitting.
    expectations (e.g. "design approved in Figma before implementation"), SEO
    preservation, integrations, performance targets, testing expectations and
    "must not" rules are requirements too.
-4. **Optional:** `priority: "optional"` when the text marks it so ("opcjonalnie",
-   "optional", "if possible", "jeśli możliwe", "nice to have", "to be priced
-   separately as an option"). Otherwise `"required"`.
+4. **Optional scope vs optional user behaviour.** Words such as "opcjonalnie" or
+   "optional" alone do not make a requirement optional. Distinguish:
+   - **Optional project scope**: the client says implementing the feature itself
+     is optional, separately priced, nice-to-have or may be omitted ("ulubione
+     (opcjonalnie)", "if possible", "jeśli możliwe", "nice to have", "to be
+     priced separately as an option") -> `priority: "optional"`.
+   - **Optional user behaviour**: the feature must support an optional action or
+     value for the end user (optional account creation, optional review photo,
+     optional company details, …) -> `priority: "required"`. Keep the optional
+     behaviour in `description` or `conditions`.
+
+   Otherwise `"required"`.
 5. **Conditions:** if it depends on something ("only when stock is low", "if the
    system supports it", "range to be agreed based on WooCommerce attributes"),
    put that condition in `conditions`, else `null`.

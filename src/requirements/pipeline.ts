@@ -14,7 +14,7 @@ import { SourceIndex } from "./sourceIndex.js";
 import { normalizeForMatch } from "./text.js";
 
 /** Bump when the authoring rules in CLAUDE.md change in a way that affects output. */
-export const INSTRUCTIONS_VERSION = "requirements-authoring/v1";
+export const INSTRUCTIONS_VERSION = "requirements-authoring/v2";
 
 interface SegmentResult {
     segmentIndex: number;
